@@ -1,0 +1,104 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+/*
+Design sites
+http://www.onextrapixel.com/2013/10/25/40-stunning-website-designs-with-great-color-schemes/
+*/
+@charset "utf-8";
+body {
+    background-color:#959595;
+}
+h1 {
+    background-color:#c93131;
+    color:whitesmoke;
+}
+h2 {
+
+    color:#063E53;
+}
+h3 {
+    color:#063E53;
+}
+footer {
+    clear:both;
+}
+#main {
+    font:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    text-align:center;
+}
+
+#left {
+    font:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    text-align:left;
+}
+/*
+Class for Centering tables
+*/
+table.center { 
+    margin:auto;   
+    outline:double;
+    border:none;
+}
+
+/*
+Table left align
+*/
+table.left {
+    margin:auto; 
+    border-style:groove;
+    border-color:#c93131;
+    text-align:left;
+}
+/*
+Tr and td
+*/
+tr.borders {
+    border-style:groove;
+    border-color:#c93131;
+    color:white; 
+    background-color:#c93131;
+}
+td.borders {
+    border-style:groove;
+    border-color:#c93131;
+    color:white; 
+    background-color:#c93131;
+}
+table.gridtable {
+    margin:auto; 
+    width:50%;    
+    font-family: verdana,arial,sans-serif;
+    font-size:small;
+    color:#333333;
+    border-width: 1px;
+    border-color: #ffffff;
+    border-collapse: collapse;
+    text-align:left;
+}
+table.gridtable th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: inherit;
+   /*  background-color: #dedede; */
+    background-color: #0193B7;
+}
+table.gridtable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: inherit;
+    background-color: #ffffff;
+}
+
+table.menus {
+    margin:auto; 
+    width:75%;      
+    font-family: verdana,arial,sans-serif;
+    font-size:medium;   
+    text-align:center;
+}
