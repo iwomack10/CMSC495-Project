@@ -10,7 +10,7 @@
             <%@include file="WEB-INF/jspf/menus.jspf" %>
             <p></p>
             <p></p>
-            <% String User = (String) session.getAttribute("UMUCUserEmail");%>            
+            <% String User = (String) session.getAttribute("UserEmail");%>            
             <h3>Hello <%= User%>!</h3>           
             
             <% String e = (String) request.getAttribute("ErrorMessage"); 

@@ -63,10 +63,10 @@ public class Authenticate extends HttpServlet {
         if (isValid) {
             // Create a session object if it is already not  created.
             session = request.getSession(true);
-            session.setAttribute("UMUCUserEmail", username);         
-            session.setAttribute("UMUCUserID", user_id);
+            session.setAttribute("UserEmail", username);         
+            session.setAttribute("UserID", user_id);
 
-            // Send to the Welcome JSP page              
+            // Send to the Welcome             
             
             RequestDispatcher dispatcher = request.getRequestDispatcher("welcome.jsp");
             dispatcher.forward(request, response);

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SDEV425 Login</title>
+        <title>Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles.css" rel="stylesheet" type="text/css">
@@ -13,7 +13,7 @@
             <p></p>
             <h2>Login</h2>
 
-            <% if (session.getAttribute("UMUCUserEmail") == null) {
+            <% if (session.getAttribute("UserEmail") == null) {
             %>
 
 

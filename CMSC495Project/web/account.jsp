@@ -13,13 +13,13 @@
 
             <h3>Account Data</h3>
 // login & data stuff
-            <% if (session.getAttribute("UMUCUserEmail") == null) {
+            <% if (session.getAttribute("UserEmail") == null) {
                     // Send back to login page 
                     response.sendRedirect("login.jsp"); %>
             <% } else {%>
 <!--            <%-- Gather the data from the server--%>
-            <% String UserEmail = (String) session.getAttribute("UMUCUserEmail");%>  
-            <% String user_id = (String) session.getAttribute("UMUCUserID").toString();%>  
+            <% String UserEmail = (String) session.getAttribute("UserEmail");%>  
+            <% String user_id = (String) session.getAttribute("UserID").toString();%>  
             <% String Cardholdername = (String) request.getAttribute("Cardholdername");%>  
             <% String CardType = (String) request.getAttribute("CardType");%>  
             <% String ServiceCode = (String) request.getAttribute("ServiceCode");%>  

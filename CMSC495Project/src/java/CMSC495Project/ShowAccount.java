@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SDEV425_HW4;
+package CMSC495Project;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -35,7 +35,7 @@ public class ShowAccount extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
 
         session = request.getSession(true);
-        if (session.getAttribute("UMUCUserEmail") == null) {
+        if (session.getAttribute("UserEmail") == null) {
             response.sendRedirect("login.jsp");
         } else {
             getData();
@@ -86,7 +86,7 @@ public class ShowAccount extends HttpServlet {
             // Use of prepared statements
             String sql = "SELECT * FROM customeraccount WHERE user_id = ?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
-            pstmt.setInt(1, (Integer) session.getAttribute("UMUCUserID"));
+            pstmt.setInt(1, (Integer) session.getAttribute("UserID"));
             ResultSet rs = pstmt.executeQuery();
 
             while (rs.next()) {
